@@ -1,0 +1,9 @@
+@use "../abstracts/"as a;
+
+
+p {
+	font: {
+		family: a.$main-font;
+		size: a.rem(50);
+	}
+}
