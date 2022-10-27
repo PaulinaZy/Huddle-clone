@@ -6,6 +6,7 @@ body {
 	background-image: url(../../Assets/bg-mobile.svg);
 	background-position: center center;
 	background-repeat: no-repeat;
+	//background-position: top;
 	background-size: cover;
 
 	@include a.breakpoint(large) {
@@ -16,9 +17,97 @@ body {
 .container {
 	width: 100%;
 	padding: a.rem(35);
+
+	@include a.breakpoint(large) {
+		padding: a.rem(80);
+	}
+
+	// =========HEADER==========
+	header {
+		.logo {
+			width: a.rem(120);
+			margin-bottom: a.rem(65);
+
+			@include a.breakpoint(large) {
+				width: a.rem(200);
+				margin-bottom: a.rem(95);
+			}
+		}
+	}
+
+	// ==========MAIN ===========
+
+	main {
+		margin-bottom: a.rem(60);
+		margin-inline: auto;
+		display: grid;
+		max-width: a.rem(2300);
+
+		@include a.breakpoint(large) {
+
+			grid-template-columns: 1fr 1fr;
+			margin-bottom: a.rem(25);
+		}
+	}
+
+	.heroImage {
+		padding-bottom: a.rem(60);
+		margin-inline: auto;
+
+		@include a.breakpoint(large) {
+
+			margin-inline: 0;
+		}
+	}
+
+	.heroText {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@include a.breakpoint(large) {
+			align-items: flex-start;
+			margin-left: a.rem(60);
+		}
+
+		h1 {
+			margin: a.rem(20) 0;
+		}
+
+		p {
+			margin-bottom: a.rem(20);
+
+			@include a.breakpoint(medium) {
+				max-width: a.rem(600);
+			}
+		}
+	}
 }
 
-.logo {
-	width: a.rem(120);
+// ========FOOTER===========
+footer {
+	display: flex;
+	justify-content: center;
+
+	@include a.breakpoint(large) {
+		justify-content: flex-end;
+	}
+
+	a {
+		margin-right: a.rem(16);
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		i {
+			&:hover {
+				color: a.$secondary-color;
+				border: 1px solid a.$secondary-color;
+			}
+
+		}
+
+	}
 
 }

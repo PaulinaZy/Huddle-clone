@@ -1,0 +1,16 @@
+@use "../abstracts"as a;
+
+i.fa-brands {
+	border: 1px solid #fff;
+	border-radius: 50%;
+	width: a.rem(30);
+	height: a.rem(30);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include a.breakpoint(large) {
+		width: a.rem(40);
+		height: a.rem(40);
+	}
+}

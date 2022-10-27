@@ -1,0 +1,24 @@
+@use "../abstracts"as a;
+
+.btn {
+          color: a.$primary-color;
+          font-size: a.rem(13);
+          font-family: a.$main-font;
+          background-color: #fff;
+          border: none;
+          border-radius: 100px;
+          padding: a.rem(10) a.rem(70);
+          box-shadow: 0 a.rem(5) a.rem(5) darken(a.$primary-color, 20%);
+          text-align: center;
+          width: a.rem(200);
+
+          @include a.breakpoint(large) {
+                    font-size: a.rem(15);
+                    padding: a.rem(20) a.rem(60);
+          }
+
+          &:hover {
+                    background-color: a.$secondary-color;
+                    color: #fff;
+          }
+}

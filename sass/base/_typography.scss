@@ -4,6 +4,40 @@
 p {
 	font: {
 		family: a.$main-font;
-		size: a.rem(50);
+		size: a.rem(15);
 	}
+
+	line-height: 1.5;
+	text-align: center;
+
+	@include a.breakpoint(large) {
+		text-align: left;
+		font-size: a.rem(17);
+	}
+}
+
+h1 {
+	font-family: a.$main-font;
+	text-align: center;
+	font-size: a.rem(22);
+	text-transform: capitalize;
+	line-height: 1.75;
+
+	@include a.breakpoint(medium) {
+		font-size: a.rem(30);
+	}
+
+	@include a.breakpoint(large) {
+		text-align: left;
+
+	}
+
+	@include a.breakpoint(xlarge) {
+		font-size: a.rem(40);
+	}
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
 }
