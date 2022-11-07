@@ -11,14 +11,14 @@ body {
 	min-height: 100vh;
 	padding: a.rem(35);
 
-	background-image: url("../../Assets/bg-mobile.svg");
+	background-image: url("../Assets/bg-mobile.svg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 
 	@include a.breakpoint(large) {
 		padding: a.rem(80);
-		background-image: url("../../Assets/bg-desktop.svg");
+		background-image: url("../Assets/bg-desktop.svg");
 	}
 
 	// =========HEADER==========
