@@ -3,14 +3,13 @@
 body {
 	background-color: a.$primary-color;
 	color: #fff;
-	background-image: url(../../Assets/bg-mobile.svg);
+	background-image: url("../../Assets/bg-mobile.svg");
 	background-position: center center;
 	background-repeat: no-repeat;
-	//background-position: top;
 	background-size: cover;
 
 	@include a.breakpoint(large) {
-		background-image: url(../../Assets/bg-desktop.svg);
+		background-image: url("../../Assets/bg-desktop.svg");
 	}
 }
 
