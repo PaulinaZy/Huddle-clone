@@ -68,24 +68,21 @@ a {
 body {
   background-color: hsl(257deg, 40%, 49%);
   color: #fff;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2.1875rem;
   background-image: url("../../Assets/bg-mobile.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media (min-width: 70em) {
-  body {
-    background-image: url("../../Assets/bg-desktop.svg");
-  }
-}
-
-.container {
-  width: 100%;
-  padding: 2.1875rem;
-}
-@media (min-width: 70em) {
   .container {
     padding: 5rem;
+    background-image: url("../../Assets/bg-desktop.svg");
   }
 }
 .container header .logo {

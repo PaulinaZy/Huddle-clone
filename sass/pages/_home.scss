@@ -3,22 +3,22 @@
 body {
 	background-color: a.$primary-color;
 	color: #fff;
+
+}
+
+.container {
+	width: 100%;
+	min-height: 100vh;
+	padding: a.rem(35);
+
 	background-image: url("../../Assets/bg-mobile.svg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 
 	@include a.breakpoint(large) {
-		background-image: url("../../Assets/bg-desktop.svg");
-	}
-}
-
-.container {
-	width: 100%;
-	padding: a.rem(35);
-
-	@include a.breakpoint(large) {
 		padding: a.rem(80);
+		background-image: url("../../Assets/bg-desktop.svg");
 	}
 
 	// =========HEADER==========
